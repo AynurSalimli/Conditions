@@ -12,3 +12,4 @@ C:\Users\aynur\Desktop\start\first\obj\Debug\net8.0\refint\first.dll
 C:\Users\aynur\Desktop\start\first\obj\Debug\net8.0\first.pdb
 C:\Users\aynur\Desktop\start\first\obj\Debug\net8.0\first.genruntimeconfig.cache
 C:\Users\aynur\Desktop\start\first\obj\Debug\net8.0\ref\first.dll
+C:\Users\aynur\Desktop\start\first\obj\Debug\net8.0\first.sourcelink.json

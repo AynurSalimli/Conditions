@@ -1,16 +1,25 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, Aynur!");
-Random dice = new Random();
+﻿Random dice = new Random();
+int num1 = dice.Next(1,8);
+int num2 = dice.Next(1, 8);
+int num3 = dice.Next(1, 8);
 
-int roll1 = dice.Next(1, 7);
-int roll2 = dice.Next(1, 7);
-int roll3 = dice.Next(1, 7);
-Console.WriteLine(roll1+roll2+roll3);
+int total = num1 + num2 + num3;
 
-if (roll1 > 3)
-{
-    Console.Write("It is bigger");
+Console.WriteLine($"Dice roll: {num1}+{num2}+{num3}={total}");
+
+if((num1 == num2) || (num2 == num3) || (num1 == num3));{
+    Console.WriteLine("You rolled doubles! +2 bonus to total!");
+    total+=2;
 }
-else{
-    Console.Write("It is not bigger");
+
+if((num1 == num2)&& (num2 == num3)){
+    Console.WriteLine("You rolled triples! +6 bonus to total!");
+    total+=6;
+}
+
+if(total>=15){
+    Console.WriteLine("You win!");
+}
+if(total<15){
+    Console.WriteLine("Sorry you lose");
 }
