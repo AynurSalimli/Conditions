@@ -56,3 +56,18 @@ else if(daysUntilExpiration <=10){
 if(discountPercentage > 0){
     Console.WriteLine($"Renew now and save {discountPercentage}%");
 }
+
+string[] fraudulentOrderIDs = new string[3];
+
+fraudulentOrderIDs[0] = "A123";
+fraudulentOrderIDs[1] = "B456";
+fraudulentOrderIDs[2] = "C789";
+fraudulentOrderIDs[0] = "F000";
+
+Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"First: {fraudulentOrderIDs[1]}");
+Console.WriteLine($"First: {fraudulentOrderIDs[2]}");
+
+string[] numbers = {"A123", "B456", "C789"};
+Console.WriteLine(numbers[0]);
+
