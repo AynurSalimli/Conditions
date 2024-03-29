@@ -71,3 +71,34 @@ Console.WriteLine($"First: {fraudulentOrderIDs[2]}");
 string[] numbers = {"A123", "B456", "C789"};
 Console.WriteLine(numbers[0]);
 
+int[] reqemler = {12, 45, 67, 89};
+int sum = 0;
+int bin = 0;
+foreach (int item in reqemler)
+{
+    sum+=item;
+    bin++;
+    Console.WriteLine($"Bin {bin} = {item} items (Running total: {sum})");
+}
+Console.WriteLine(sum);
+
+string name = "Jane";
+if(name.StartsWith("J")){
+    Console.WriteLine("The name starts with J");
+}
+
+string sentence = "Man is over there";
+
+if(sentence.Contains("Man")){
+    Console.WriteLine("true");
+}
+
+string[] orderIDs = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+foreach (string orderID in orderIDs)
+{
+    if (orderID.StartsWith("B"))
+    {
+        Console.WriteLine(orderID);
+    }
+}
