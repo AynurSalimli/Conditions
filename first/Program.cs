@@ -189,6 +189,8 @@
 
 
 
+using System.ComponentModel.DataAnnotations;
+
 int[] numbers1 = { 4, 8, 10, 12, 32, 89 };
 int total1 = 0;
 bool found = false;
@@ -232,6 +234,7 @@ switch (employeeLevel)
 }
 
 Console.WriteLine($"{employeeName}, {title}");
+
 
 
 string sku = "01-MN-L";
@@ -290,3 +293,41 @@ else
 }
 
 Console.WriteLine($"Product: {size} {color} {type}");
+
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+    if (i == 7) break;
+
+}
+
+for (int a = 10; a > 0; a--)
+{
+    Console.WriteLine(a);
+}
+
+string[] employees = { "Alex", "David", "Michael" };
+
+for (int i = employees.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine(employees[i]);
+}
+
+for (int i = 0; i < employees.Length; i++)
+{
+    Console.WriteLine(employees[i]);
+}
+
+//Fizz Buzz challange
+for (int c = 1;c < 101; c++)
+{
+    if ((c % 3 == 0) && (c % 5 == 0))
+        Console.WriteLine($"{c} - FizzBuzz");
+    else if (c % 3 == 0)
+        Console.WriteLine($"{c} - Fizz");
+    else if (c % 5 == 0)
+        Console.WriteLine($"{c} - Buzz");
+    else
+        Console.WriteLine($"{c}");
+}
