@@ -132,3 +132,8 @@ Console.WriteLine(2>=2);//true
 
 string text1 = "The quick brown fox";
 Console.WriteLine(text1.Contains("fox"));//true
+
+int salesAmount = 1001;
+// int discount = salesAmount > 100 ? 200 : 50;
+// Console.WriteLine($"Discount:\t {discount}");
+Console.WriteLine($"Discount:\t{(salesAmount > 1000 ? 100 : 50)}");
