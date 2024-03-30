@@ -210,7 +210,7 @@ if (found)
 
 Console.WriteLine($"Total: {total1}");
 
-//Switch case
+//Switch case statements
 
 int employeeLevel = 100;
 string employeeName = "John Smith";
@@ -295,6 +295,7 @@ else
 Console.WriteLine($"Product: {size} {color} {type}");
 
 
+//for loop
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine(i);
@@ -320,14 +321,36 @@ for (int i = 0; i < employees.Length; i++)
 }
 
 //Fizz Buzz challange
-for (int c = 1;c < 101; c++)
+
+for (int c = 1; c < 101; c++)
 {
-    if ((c % 3 == 0) && (c % 5 == 0))
+    if ((c % 3 == 0) && (c % 5 == 0)) //if it divides to 3 and 5 
         Console.WriteLine($"{c} - FizzBuzz");
     else if (c % 3 == 0)
-        Console.WriteLine($"{c} - Fizz");
+        Console.WriteLine($"{c} - Fizz"); //if it just divides to 3
     else if (c % 5 == 0)
-        Console.WriteLine($"{c} - Buzz");
+        Console.WriteLine($"{c} - Buzz"); // if it is just divides to 5
     else
         Console.WriteLine($"{c}");
 }
+
+//do while statements
+
+
+Random num = new Random();
+int current = 0;
+
+// do
+// {
+//     current = num.Next(1, 11);
+//     Console.WriteLine(current);
+// } while (current != 7);
+
+while(current > 5){
+    Console.WriteLine(current);
+    current = num.Next(1,11);
+}
+
+Console.WriteLine($"Last number : {current}");
+
+//Roll and dice
